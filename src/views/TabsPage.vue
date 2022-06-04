@@ -4,7 +4,7 @@
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="TabProfile" href="/tabs/TabProfile">
-          <ion-icon :icon="ellipse" />
+          <ion-icon :icon="personCircleOutline" />
           <ion-label>Perfil</ion-label>
         </ion-tab-button>
 
@@ -33,7 +33,7 @@ import {
   IonPage,
   IonRouterOutlet,
 } from "@ionic/vue";
-import { ellipse, square, triangle } from "ionicons/icons";
+import { ellipse, square, triangle, personCircleOutline } from "ionicons/icons";
 
 export default defineComponent({
   name: "TabsPage",
@@ -51,6 +51,7 @@ export default defineComponent({
       ellipse,
       square,
       triangle,
+      personCircleOutline,
     };
   },
 });
