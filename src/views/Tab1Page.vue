@@ -48,6 +48,11 @@ import {
   IonToolbar,
   IonTitle,
   IonContent,
+  IonThumbnail,
+  IonLabel,
+  IonList,
+  IonItem,
+  IonSearchbar,
 } from "@ionic/vue";
 
 interface Movie {
@@ -61,7 +66,18 @@ interface Movie {
 
 export default defineComponent({
   name: "TabProfile",
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: {
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    IonPage,
+    IonThumbnail,
+    IonLabel,
+    IonList,
+    IonItem,
+    IonSearchbar,
+  },
   setup() {
     const title = "Filmes";
     const movies = ref<Movie[]>([]);
@@ -104,7 +120,7 @@ export default defineComponent({
 </script>
 <style scoped>
 .img-circle {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .ellipsis {
